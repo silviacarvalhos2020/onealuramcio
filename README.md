@@ -24,7 +24,7 @@ A aplicação utiliza as seguintes substituições para criptografia:
 - A aplicação deve funcionar apenas com letras minúsculas.
 - Não são permitidos caracteres acentuados ou especiais.
 - Deve ser possível criptografar uma palavra e reverter para o texto original.
-  - Exemplo: **"gato"** se torna **"gaitober"** e **"gaitober"** retorna a **"gato"**.
+  - Exemplo: **"amor"** se torna **"aimoberr"** e **"aimoberr"** retorna a **"amor"**.
 - A interface da aplicação deve incluir campos para:
   - Inserir o texto a ser criptografado ou descriptografado.
   - Escolher entre as funções de criptografia ou descriptografia.
@@ -36,7 +36,7 @@ A aplicação utiliza as seguintes substituições para criptografia:
 
 ## Tecnologias Utilizadas
 
-- [Linguagem de programação utilizada, ex: JavaScript]
+- [Linguagem de programação utilizada: JavaScript]
 - [Frameworks ou bibliotecas, ex: React, Bootstrap]
 - [Outras ferramentas, ex: Visual Studio Code]
 
