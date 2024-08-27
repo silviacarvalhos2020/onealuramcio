@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Reset básico */
+:root {
+    --cor-primaria:#ffffff;
+    --cor-secundaria:#000000;
+    --cor-tercearia:#0A3871;
+    --cor-hover:#1875E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content:center ;
+}
+
+/* Estiliza a caixa principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 1.25rem;
+}
+
+/* Estiliza o conteúdo dentro da caixa principal */
+.container__conteudo {
+    display: flex;
+    width: 37.5rem;
+    height: 25rem;
+    border: 0.0625rem solid var(--cor-primaria);
+    border-radius: 0.5rem;
+    background-color: var(--cor-primaria);
+    box-shadow: 0 0.25rem 0.5rem var(--cor-secundaria);
+}
+
+/* Estiliza a seção de informações */
+.container__informacoes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25rem;
+    border-right: 0.0625rem solid var(--cor-primaria);
+}
+
+/* Estiliza o cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.container__logo img {
+    max-width: 6.25rem;
+    margin-right: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 3rem;
+    color:var(--cor-hover);
+}
+
+/* Estiliza o campo de input */
+.container__input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--cor-secundaria);
+    margin-bottom: 0.5rem;
+}
+
+/* Estiliza a nota do input */
+.container__nota {
+    font-size: 0.875rem;
+    color:var(--cor-secundaria);
+}
+
+/* Estiliza a seção de botões */
+.container__botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Estiliza os botões */
+.container__botao1, .container__botao2, .container__botao3 {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 3.125rem;
+    border:  0.125rem solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Estiliza o botão Criptografar */
+.container__botao1 {
+    background-color: var(--cor-tercearia);
+    color: var(--cor-primaria);
+    border-color: var(--cor-tercearia);
+}
+
+/* Estiliza o botão Descriptografar */
+.container__botao2 {
+    background-color: var(--cor-primaria);
+    color: var(--cor-tercearia);
+    border-color: var(--cor-hover);
+}
+
+/* Estiliza o botão Copiar */
+.container__botao3 {
+    background-color: var(--cor-primaria);
+    color: var(--cor-tercearia);
+    border-color: var(--cor-hover);
+}
+
+/* Estiliza os botões ao serem hover */
+.container__botao1:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    border-color: var(--cor-hover);
+    box-shadow: 0 0.25rem 0.75rem var(--cor-secundaria);
+}
+
+.container__botao2:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    border-color: var(--cor-hover);
+    box-shadow: 0 0.25rem 0.75rem var(--cor-secundaria);
+}
+
+.container__botao3:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    border-color: var(--cor-hover);
+    box-shadow: 0 0.25rem 0.75rem var(--cor-secundaria);
+}
+
+/* Estiliza a seção da imagem */
+.container__imagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.container__imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto__imagem, .texto__imagem2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+/* Estiliza o rodapé */
+.footer {
+    text-align: center;
+    padding: 0.625rem;
+    background-color: var(--cor-primaria);
+    border-top: 1px solid var(--cor-primaria);
+    font-size: 0.875rem;
+    color: var(--cor-secundaria);
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 48rem) {
+    .container {
+        flex-direction: column;
+        padding: 0.625rem;
+    }
+
+    .container__conteudo {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container__botoes {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container__botao1, .container__botao2, .container__botao3 {
+        width: 100%;
+    }
+}

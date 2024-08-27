@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador Alura</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="header">
+                    <div class="container__logo">
+                        <img src="./assets/logo.png" alt="Logo da Alura">
+                    </div>
+                    <h1>Digite seu texto</h1>
+                </div>
+                <input type="text" class="container__input" id="inputText" oninput="validateInput(this)" placeholder=".....">
+                <p class="container__nota">Apenas letras minúsculas e sem acento.</p>
+                <div class="container__botoes">
+                    <button onclick="criptografar()" class="container__botao1">Criptografar</button>
+                    <button onclick="descriptografar()" class="container__botao2">Descriptografar</button>
+                </div>
+            </div>
+            <div class="container__imagem">
+                <img src="./assets/imagem.png" alt="imagem">
+                <p class="texto__imagem">Nenhuma mensagem encontrada</p>
+                <p class="texto__imagem2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p id="outputText" class="texto__imagem"></p>
+                <button onclick="updateClipboard()" class="container__botao3">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Desenvolvido por Sílvia Carvalho para o Desafio Alura.</p>
+        <p> Meninos usam azul, meninas usam medalhas.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
